@@ -1,6 +1,9 @@
 input.onButtonPressed(Button.A, function () {
-    music.playMelody("C D E F G A B C5 ", 120)
+    kitronik_motor_driver.motorOff(kitronik_motor_driver.Motors.Motor1)
+})
+input.onButtonPressed(Button.B, function () {
+    servos.P0.stop()
 })
 basic.forever(function () {
-	
+    kitronik_motor_driver.motorOn(kitronik_motor_driver.Motors.Motor1, kitronik_motor_driver.MotorDirection.Forward, 0)
 })

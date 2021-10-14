@@ -4,7 +4,10 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "Grove": "github:seeed-studio/pxt-grove#v0.5.0",
+        "servo": "*",
+        "pxt-kitronik-motor-driver": "github:kitronikltd/pxt-kitronik-motor-driver#v0.0.7"
     },
     "files": [
         "main.blocks",
